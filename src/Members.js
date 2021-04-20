@@ -8,7 +8,7 @@ export default function Members (props) {
   }
 
   return (
-    <div className='friend container'>
+    <div className='container'>
       <h2>{fullName}</h2>
       <p>Email: {email}</p>
       <p>Role: {role}</p>

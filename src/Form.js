@@ -18,12 +18,12 @@ export default function Form (props) {
   }
 
   return (
-    <form className='form container' onSubmit={onSubmit}>
-      <div className='form-group inputs'>
+    <form className='container' onSubmit={onSubmit}>
+      <div>
         <label>Name
           <input
             type="text"
-            value={values.name}
+            value={values.fullName}
             onChange={onChange}
             name="fullName"
             placeholder="Full Name"
@@ -46,6 +46,7 @@ export default function Form (props) {
             <option value="">-- Select a Role --</option>
             <option value="Backend Engineer">Backend Engineer</option>
             <option value="Frontend Engineer">Frontend Engineer</option>
+            <option value="Full Stack Engineer">Full Stack Engineer</option>
             <option value="UX Designer">UX Designer</option>
           </select>
         </label>

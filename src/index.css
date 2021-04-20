@@ -5,7 +5,7 @@
 body {
   background-color: rgb(244, 244, 244);
   color: rgb(65, 75, 60);
-  font-family: 'Bitter', serif;
+  font-family: 'san-Serif', serif;
   padding: 32px;
   width: 80%;
   margin: auto;
@@ -17,6 +17,7 @@ body {
   padding: 32px;
   background-color: white;
   margin-bottom: 24px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2, h3, h4 {
   color: royalblue;

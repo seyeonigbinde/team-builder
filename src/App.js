@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Form from './Form';
 import Members from './Members'
@@ -6,9 +6,9 @@ import Members from './Members'
 function App() {
 
   const membersList = [
-  { fullName: 'Titi Coker', email: 'dog', role: 'Frontend Engineer' },
-  { fullName: 'John Bush', email: 'canary', role: 'Frontend Engineer' },
-  { fullName: 'Thiago Silva', email: 'fish', role: 'Backend Engineer' },
+  { fullName: 'Titilayo Coker', email: 'titi.coker@yahoo.com', role: 'UX Designer' },
+  { fullName: 'John Bush', email: 'j.bush@gmail.com', role: 'Frontend Engineer' },
+  { fullName: 'Thiago Silva', email: 'thiago.silva@gmail.com', role: 'Backend Engineer' },
 ]
 
   const initialFormValues = {
@@ -38,20 +38,21 @@ function App() {
     if (!newMember.fullName || !newMember.email || !newMember.role) return
   }
   return (
+    
     <div className="container">
       <h1>Add Team Members</h1>
       <Form values={formValues}
         update={updateForm}
         submit={submitForm}/>
-
-          {teamMembers.map((member, idx) => {
-        return (
-          <Members key={idx} fullName={member.fullName} email={member.email} role={member.role} />
+          <h1>Team Members</h1>
+          {
+          teamMembers.map((member, idx) => {
+    return (
+      <Members key={idx} fullName={member.fullName} email={member.email} role={member.role} />
         )
       })}    
-
-      
     </div>
+    
   );
 }
 
