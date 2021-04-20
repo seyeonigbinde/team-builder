@@ -25,7 +25,7 @@ export default function Form (props) {
             type="text"
             value={values.name}
             onChange={onChange}
-            name="name"
+            name="fullName"
             placeholder="Full Name"
             maxLength="30"
           />
@@ -51,7 +51,7 @@ export default function Form (props) {
         </label>
 
         <div className='submit'>
-          <button disabled={!values.name || !values.email || !values.role}>submit</button>
+          <button disabled={!values.fullName || !values.email || !values.role}>submit</button>
         </div>
       </div>
     </form>
